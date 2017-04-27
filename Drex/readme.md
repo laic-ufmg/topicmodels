@@ -49,4 +49,4 @@ Parameters description:
 
 Notice the directory structure used in the commands above to avoid errors.
 
-If you need any assistance, please email Marcelo Pita (marcelo.souza.pita@gmail.com) or Paulo Bicalho (paulovianabicalho@gmail.com).
+If you need any assistance, please email Marcelo Pita (marcelo.souza.pita at gmail dot com) or Paulo Bicalho (paulovianabicalho at gmail dot com).
