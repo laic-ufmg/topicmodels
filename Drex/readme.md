@@ -1,4 +1,4 @@
-Instructions for executing Drex
+Instructions for executing DREx
 
 Works in 2 steps:
 1. Word cache generation, using command
