@@ -1,8 +1,6 @@
 # Methods for Expanding Short Text for Topic Modeling
 
-Code and datasets related to the project to improve topic modeling for short text.
-
-Here you can find the codes for DREx(Distributed Representation-based Expansion) and COFE (Co-Frequency Expansion), both described in 
+Here you can find the Twitter datasets and the codes for DREx (Distributed Representation-based Expansion) and COFE (Co-Frequency Expansion), both described in 
 
 Paulo Bicalho, Marcelo Pita, Gabriel Pedrosa, Anisio Lacerda, Gisele L. Pappa, A general framework to expand short text for topic modeling, Information Sciences, Volume 393, July 2017, Pages 66-81, ISSN 0020-0255, http://doi.org/10.1016/j.ins.2017.02.007.
 (http://www.sciencedirect.com/science/article/pii/S0020025517304206)
