@@ -6,12 +6,18 @@ Works in 2 steps:
 python create_cache.py -i Datasets/newsN20short.csv -v WordVectors/newsN20short_vectors_glove.txt -l 2 -n 100 -c Cache/n20_100.txt
 
 Parameters description:
-    "-i", "--input", "Input dataset file", required.
-    "-v", "--vectors", "Words vectors file (word2vec format)", required.
-    "-b", "--binary", "Set words vectors file to binary".
-    "-l", "--ngram_len", "N-gram length", Default for DREx is 2.
-    "-n", "--num_similar_words", "Number of similar words per ngram", Default for DREx is 200
-    "-c", "--cache_filename", "Cache file",required
+
+"-i", "--input", "Input dataset file", required.
+
+"-v", "--vectors", "Words vectors file (word2vec format)", required.
+
+"-b", "--binary", "Set words vectors file to binary".
+
+"-l", "--ngram_len", "N-gram length", Default for DREx is 2.
+
+"-n", "--num_similar_words", "Number of similar words per ngram", Default for DREx is 200
+
+"-c", "--cache_filename", "Cache file",required
 
 
 2. Documents expansion, using commnd
@@ -19,11 +25,19 @@ Parameters description:
 python expand.py -i Datasets/newsN20short.csv -s -v 2,7,20 -l 2 -c Cache/n20_100.txt -o Output/ -f n20_scale
 
 Parameters description:
-    "-i", "--input", "Input dataset file", required.
-    "-s", "--type_scale", "Set DREx to calculate the number of expansion words using a scale factor of the document size", Default valeu is false.
-    "-v", "--expansion_values", "List of number of expansion words or scaling factors (separated by commas)", required.
-    "-l", "--ngram_len", "N-gram length", Default value is 2.
-    "-c", "--cache_filename", "Cache file",required.
-    "-o", "--output_path", "Output path",required.
-    "-f", "--output_files_prefix", "Prefix of output files", required.
-    "-p", "--probabilistic_selection", "Set DREx to use probabilistic selection instead of top N selection", Default value is false.
+
+"-i", "--input", "Input dataset file", required.
+
+"-s", "--type_scale", "Set DREx to calculate the number of expansion words using a scale factor of the document size", Default valeu is false.
+
+"-v", "--expansion_values", "List of number of expansion words or scaling factors (separated by commas)", required.
+
+"-l", "--ngram_len", "N-gram length", Default value is 2.
+
+"-c", "--cache_filename", "Cache file",required.
+
+"-o", "--output_path", "Output path",required.
+
+"-f", "--output_files_prefix", "Prefix of output files", required.
+
+"-p", "--probabilistic_selection", "Set DREx to use probabilistic selection instead of top N selection", Default value is false.
