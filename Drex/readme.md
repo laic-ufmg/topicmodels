@@ -5,6 +5,9 @@ INSTRUCTIONS FOR EXECUTING DREx
 Works in 2 steps:
 1. Word cache generation, using create_cache
 
+Example:
+python create_cache.py -i Datasets/newsN20short.csv -v WordVectors/newsN20short_vectors_glove.txt -l 2 -n 100 -c Cache/n20_100.txt
+
 Parameters description:
 
 "-i", "--input", "Input dataset file", required.
@@ -19,10 +22,11 @@ Parameters description:
 
 "-c", "--cache_filename", "Cache file",required
 
-Example:
-python create_cache.py -i Datasets/newsN20short.csv -v WordVectors/newsN20short_vectors_glove.txt -l 2 -n 100 -c Cache/n20_100.txt
 
 2. Documents expansion, using expand
+
+Example:
+python expand.py -i Datasets/newsN20short.csv -s -v 2,7,20 -l 2 -c Cache/n20_100.txt -o Output/ -f n20_scale
 
 Parameters description:
 
@@ -42,7 +46,5 @@ Parameters description:
 
 "-p", "--probabilistic_selection", "Set DREx to use probabilistic selection instead of top N selection", Default value is false.
 
-Example:
-python expand.py -i Datasets/newsN20short.csv -s -v 2,7,20 -l 2 -c Cache/n20_100.txt -o Output/ -f n20_scale
 
 Notice the directory structure used in the commands above to avoid errors.
