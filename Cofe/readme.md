@@ -1,3 +1,5 @@
+# CoFE
+
 CoFE generates pseudo-documents from a given text collection which are larger than the original ones. It does so by creating a similarity graph, which is generated exploiting word cooccurrence information found in the dataset. Then, for each document, CoFE explores the graph to select good words to be appended to the document to generate its larger version.
 
 If you need any assistance, please email Gabriel Miranda (gabriel.gmps at gmail dot com) or Marcelo Pita (marcelo.souza.pita at gmail dot com).
